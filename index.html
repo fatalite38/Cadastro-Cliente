@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+
+    <title>Cadastro</title>
+    
+</head>
+
+<body onload="time()">
+    <h1>Cadastro do cliente</h1>
+    <form id="formulario" action="/logar" method="post">
+        <label for="">Nome</label>
+        <input class="corpo" type="text" id="nome" placeholder="Digite seu nome"><br>
+        <label for="">E-mail</label>
+        <input class="corpo" type="email" id="email" placeholder="Digite seu endereço de e-mail"> <br>
+        <label for="">Telefone</label>
+        <input class="corpo" type="text" id="telefone" placeholder="Digite seu número"> <br>
+        <label for="">CPF</label>
+        <input class="corpo" type="text" id="cpf" placeholder="Digite seu CPF"><br>
+        <input class="btn" onclick="gravarDados()" type="button" value="Gravar Cliente">
+        
+    </form>
+    <br>
+    <hr>
+    <a class="link" href="tabela.html">Lista de clientes</a>
+
+</body>
+</html>
